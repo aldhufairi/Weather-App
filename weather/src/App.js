@@ -6,7 +6,7 @@ import Weather from './components/Weather';
 //put ur API_KEY there
 const API_KEY = "ADD Your API here from openweathermap website";
 
-// http://api.openweathermap.org/data/2.5/weather?q=cairo%2Cegypt&appid=e36ed364400282e43250b6c4c0274d44
+
 class App extends Component {
 
   state ={
@@ -23,7 +23,7 @@ getWeather = async (e) => {
   const city = e.target.elements.city.value;
   const country = e.target.elements.country.value;
   //console.log(city, country)
-  const api = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}%2C${country}&appid=${API_KEY}`);
+  const api = await fetch(`Add weather website link here`);
   const data = await api.json();
   //console.log(data)
   if(city && country){
